@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>La Biblioteca</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <header class="titulo">BIBLIOTECA PERSONAL</header>
+
+        <section class="info">
+            <div class="subtitulo"><h3>Libros Disponibles</h3></div>
+            <div class="contenedor_opciones">
+                <select name="" id="selector" class="selector">
+                    <option value="tituloAZ">Titulo (A-Z)</option>
+                    <option value="tituloZA">Titulo (Z-A)</option>
+                    <option value="autorAZ">Autor (A-Z)</option>
+                    <option value="añoAZ">Más Reciente</option>
+                    <option value="añoZA">Más Antiguo</option>
+                </select>
+                <button id="boton_guardar" class="boton">Guardar</button>
+                <button id="boton_crear" class="boton_agg">Crear Libro</button>
+            </div>
+        </section>
+
+        <main class="contenido">
+            <div id="padre" class="contenedor_tarjetas">
+            </div>
+        </main>
+
+        <footer class="pie_pagina"></footer>
+    </div>
+
+    <script src="hola.js" type="module"></script>
+</body>
+</html>

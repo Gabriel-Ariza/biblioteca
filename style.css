@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+@font-face {
+    font-family: "Switzer";
+    src: url("../webfonts/switzer/Switzer-Regular.woff2") format("woff2"), url("../webfonts/switzer/Switzer-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: bold;
+}
+::selection {
+    background-color: #000;
+    color: #93ff50;
+}
+body {
+    background: #000;
+}
+
+/* =========================  ESTILOS HEADER  ========================= */
+.contenedor {
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+.titulo {
+    min-height: 20vh;
+    height: auto;
+    width: 100%;
+    background: #6C02D6;
+    color: #FFF2D8;
+    font-size: clamp(2rem, 4.6rem, 6rem);
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.info {
+    width: 100%;
+    min-height: 14vh;
+    height: auto;
+    /* background: rgb(137, 221, 251); */
+    background: #1D267D;
+}
+.subtitulo {
+    min-height: 40%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.subtitulo h3 {
+    font-size: clamp(1rem, 2.5rem, 5rem);
+    font-weight: 900;
+}
+.contenedor_opciones {
+    min-height: 60%;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.selector {
+    height: 50px;
+    width: 250px;
+    border-radius: 15px;
+}
+.selector > option {
+    font-size: 0.9rem;
+    font-family: 'nunito', sans-serif;
+}
+.boton {
+    height: 50px;
+    width: 100px;
+    margin-left: 0.3rem;
+    border-radius: 15px;
+    text-align: center;
+}
+.boton_agg {
+    align-self: flex-end;
+    height: 50px;
+    width: 150px;
+    margin-left: 0.3rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* =========================  ESTILOS CONTENIDO  ========================= */
+
+.contenido {
+    height: fit-content;
+    width: 100%;
+    /* background: linear-gradient(to bottom, red, orange); */
+    background: #0C134F;
+}
+
+.contenedor_tarjetas {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+.tarjetas {
+    height: 500px;
+    width: 100%;
+    background-color: #FFF2D8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    .contenedor_tarjetas {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        padding: 10px 4px;
+    }
+    .tarjetas {
+        height: 600px;
+    }
+}
+/* =========================  ESTILOS TARJETAS  ========================= */
+
+.tarjetas .contenedor_imagen {
+    height: 70%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    padding: 0.4rem 0;
+}
+.contenedor_imagen img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.tarjetas .contenedor_texto {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor_texto p {
+    color: #000;
+    line-height: 1.1;
+}
+.txt {
+    color: #5a99f8;
+    font-size: 2rem;
+    letter-spacing: 1.1px;
+    font-weight: bolder;
+    font-family: 'Teko', sans-serif;
+}
+/* =========================  ESTILOS SECCION  ========================= */
+
+.pie_pagina {
+    height: 5.2vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+/* =========================  ESTILOS BARRA DESPLAZAMIENTO ========================= */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    /*background: linear-gradient(135deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);*/
+    background-color: #E41F7B;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* =========================  ESTILOS JS  ========================= */
