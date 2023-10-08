@@ -1,5 +1,3 @@
-
-
 const libro1 = {
     imagen: "100anos.webp",
     titulo: "Cien Años de Soledad",
@@ -53,4 +51,3 @@ export function libreria() {
 }
 
 // localStorage.clear
-// localStorage.clearItem(libreria)[0] borra solo un libro

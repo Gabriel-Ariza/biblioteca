@@ -3,10 +3,9 @@ import {libreria} from './libros.js';
 const contenedorTarjetas = document.getElementById('padre');
 const boton_seleccion = document.getElementById('boton_guardar');
 
-libreria()
+libreria() // guardamos los libros por defecto en el local storage
 const lista_libros = JSON.parse(localStorage.getItem('libreria'))
-localStorage.removeItem('libreria'[0])
-console.log(JSON.parse(localStorage.getItem('libreria')))
+
 
 function crearLibro(libro) {
 
@@ -53,11 +52,11 @@ function aplicarSubrayado(clase) {
             elemento.style.backgroundColor = 'black';
             elemento.style.color = '#6cd3ff';
         }
-        if(clase === 'aut') {
+        else if(clase === 'aut') {
             elemento.style.backgroundColor = 'black';
             elemento.style.color = '#6cd3ff';
         }
-        if(clase === 'tit') {
+        else if(clase === 'tit') {
             let primeraLetra = contenido.charAt(0);
             elemento.innerHTML = `<span style="background-color: black; color: #6cd3ff; padding: 0 2px">
             ${primeraLetra}</span>${contenido.slice(1)}`;

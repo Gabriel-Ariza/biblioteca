@@ -32,7 +32,7 @@ body {
     color: #fff;
 }
 .titulo {
-    min-height: 20vh;
+    min-height: 15vh;
     height: auto;
     width: 100%;
     background: #6C02D6;
@@ -45,7 +45,7 @@ body {
 }
 .info {
     width: 100%;
-    min-height: 14vh;
+    min-height: 10vh;
     height: auto;
     /* background: rgb(137, 221, 251); */
     background: #1D267D;
@@ -56,9 +56,10 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 4px;
 }
 .subtitulo h3 {
-    font-size: clamp(1rem, 2.5rem, 5rem);
+    font-size: clamp(1rem, 2.3rem, 5rem);
     font-weight: 900;
 }
 .contenedor_opciones {
@@ -71,7 +72,7 @@ body {
     padding-bottom: 10px;
 }
 .selector {
-    height: 50px;
+    height: 40px;
     width: 250px;
     border-radius: 15px;
 }
@@ -80,7 +81,7 @@ body {
     font-family: 'nunito', sans-serif;
 }
 .boton {
-    height: 50px;
+    height: 40px;
     width: 100px;
     margin-left: 0.3rem;
     border-radius: 15px;
@@ -88,7 +89,7 @@ body {
 }
 .boton_agg {
     align-self: flex-end;
-    height: 50px;
+    height: 40px;
     width: 150px;
     margin-left: 0.3rem;
     border-radius: 15px;
@@ -128,10 +129,11 @@ body {
 @media (max-width: 450px) {
     .contenedor_tarjetas {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        padding: 10px 4px;
+        padding: 30px 4px;
+        row-gap: 30px;
     }
     .tarjetas {
-        height: 600px;
+        height: 550px;
     }
 }
 /* =========================  ESTILOS TARJETAS  ========================= */
