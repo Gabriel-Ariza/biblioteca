@@ -42,5 +42,6 @@ Si alguna vez necesitas corregir la información de un libro, puedes hacerlo fá
 Espero que esta documentación te ayude a comprender mejor el proyecto de Biblioteca Personal y todas sus funcionalidades. ¡Disfruta gestionando tu colección de libros de manera sencilla y efectiva! 😊📚
 
 ---
-__Desarrollado por  🦖🚀 Jose__
+__Desarrollado por    🚀🦖 Jose Plata Ariza__
+
 [Visita mi perfil de Discord](https://discordapp.com/users/jose_ariza)
